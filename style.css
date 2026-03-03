@@ -5,46 +5,85 @@
 }
 
 body{
-    background-color: aliceblue;
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+/* hr{
+    font-size: 600;
+} */
 /* header styling */
 header{
-    background-color: white;
-    padding: 10px;
-    width: 80%;
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
     margin-bottom: 10px;
     margin-top: 10px;
-    border-radius: 20px;
+    
     
     
 }
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+}
 h1{
-    text-align: center;
+    
     color: orange;
-    margin: 20px;
+    
+    
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    
+}
+.wel-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    
     
 }
 main{
-    /* background-color: aquamarine; */
+ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
 
 }
+
+/* about section */
 .about{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: azure;
+    
     padding: 10px;
     border-radius: 25px;
     box-shadow: 2px 2px lightgray;
@@ -56,14 +95,18 @@ main{
     gap: 20px;
 
 }
-about_p{
+.about_p{
     text-align: justify;
-    width: 100px;
+   
     color: lightgray;
 }
+.about_p h3{
+    color: orange;
+    margin-bottom: 10px;
+}
 img{
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     border: 1px solid grey;
     border-radius: 20px;
     object-fit: cover;
@@ -79,12 +122,16 @@ img{
 .menu{
     display: flex;
     flex-direction: column;
-    background-color:white;
     padding: 30px;
     margin-top: 10px;
     width: 100%;
     border-radius: 25px;
-    back
+
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 2px 2px lightgray;
+    width: 100%;
+    
 }
 .menu-lists{
     display: flex;
@@ -113,6 +160,10 @@ img{
     width: 100%;
     border-radius: 20px;
     margin-top: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 2px 2px lightgray;
+    width: 100%;
 }
 table{
     width: 50%;
