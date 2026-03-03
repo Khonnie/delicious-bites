@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* header styling */
+header{
+    background-color: white;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    
+    
+}
+h1{
+    text-align: center;
+    color: orange;
+    margin: 20px;
+    
+}
+main{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 2px 2px lightgray;
+    width: 100%;
+}
+.aboutinfo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+about_p{
+    text-align: justify;
+    width: 100px;
+    color: lightgray;
+}
+img{
+    width: 400px;
+    height: 400px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.orderbtn{
+    background-color: orange;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+/* menu section */
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    padding: 30px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 25px;
+    back
+}
+.menu-lists{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.foodmenu{
+    background-color: rgb(171, 185, 185);
+    padding: 20px 50px;
+    border-radius: 20px;
+}
+.drinksmenu{
+    background-color: aquamarine;
+    padding: 20px 50px;
+    border-radius: 20px;
+}
+
+/* table */
+.pricetags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+table{
+    width: 50%;
+    
+}
+table,th, td{
+    border: 2px solid rgb(94, 65, 65);
+    
+    border-collapse: collapse;
+    
+
+}
+th, td{
+    padding: 5px 15px;
+}
+th{
+    background-color: aquamarine;
+}
+
+/* Footer styling */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
