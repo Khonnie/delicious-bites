@@ -16,6 +16,9 @@ body{
     font-size: 600;
 } */
 /* header styling */
+section{
+    margin-bottom: 20px;
+}
 header{
     
     display: flex;
@@ -85,8 +88,7 @@ main{
     gap: 20px;
     
     padding: 10px;
-    border-radius: 25px;
-    box-shadow: 2px 2px lightgray;
+    
     width: 100%;
 }
 .aboutinfo{
@@ -125,11 +127,11 @@ img{
     padding: 30px;
     margin-top: 10px;
     width: 100%;
-    border-radius: 25px;
+    
 
     padding: 10px;
-    border-radius: 25px;
-    box-shadow: 2px 2px lightgray;
+   
+    
     width: 100%;
     
 }
@@ -158,12 +160,12 @@ img{
     background-color: white;
     padding: 20px;
     width: 100%;
-    border-radius: 20px;
+    
     margin-top: 10px;
     padding: 10px;
-    border-radius: 25px;
-    box-shadow: 2px 2px lightgray;
-    width: 100%;
+   
+    
+    
 }
 table{
     width: 50%;
@@ -177,7 +179,7 @@ table,th, td{
 
 }
 th, td{
-    padding: 5px 15px;
+    padding: 5px 90px;
 }
 th{
     background-color: aquamarine;
@@ -189,9 +191,9 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    
     width: 100%;
-    border-radius: 20px;
+    
     margin-top: 10px;
     margin-bottom: 20px;
 
