@@ -125,6 +125,7 @@ main{
     margin-bottom: 0;
 }
 .about_p{
+    font-weight: bolder;
     text-align: justify;
    
     color: lightgray;
@@ -168,15 +169,24 @@ img{
     padding: 10px;
 }
 .foodmenu{
-    background-color: rgb(171, 185, 185);
+    background-color:rgba(127, 255, 212, 0.233);
     padding: 20px 50px;
     border-radius: 20px;
+    border: 1px solid aquamarine;
+    box-shadow: 2px 2px aquamarine;
+    list-style-type: none;
+    width: 300px;
+    transition: 0.3s ease;
 }
-.drinksmenu{
-    background-color: aquamarine;
-    padding: 20px 50px;
-    border-radius: 20px;
+.foodmenu:hover{
+    transform: translateY(-20px)
 }
+.foodmenu li{
+    margin-bottom: 10px;
+    border-bottom: 1px dashed rgba(128, 128, 128, 0.233);
+
+}
+
 
 /* table */
 .pricetags{
@@ -195,23 +205,31 @@ img{
     
 }
 table{
+    border-collapse: separate;
+    height: 350px;
+    border-spacing: 0;
+    border: 3px solid rgba(172, 255, 47, 0.178);
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(144, 238, 144, 0.671);
+    overflow: hidden;
     width: 50%;
+    transition: 0.3s ease;
     
 }
-table,th, td{
-    border: 2px solid rgb(94, 65, 65);
-    
-    border-collapse: collapse;
-    
+table:hover{
+    transform: translateY(-20px);
+}
 
-}
 th, td{
     padding: 5px 90px;
 }
 th{
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0.582);
 }
-
+td{
+    background-image: linear-gradient(to right, rgba(127, 255, 212, 0.719), rgba(255, 166, 0, 0.555));
+    color: black
+}
 /* Footer styling */
 footer{
     display: flex;
@@ -219,6 +237,7 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-image: linear-gradient(to top, rgba(255, 166, 0, 0.185), rgba(127, 255, 212, 0.089));
 
 
 }
@@ -238,6 +257,7 @@ form{
     flex-direction: column;
     gap: 10px;
     max-width:500px;
+    
     /* justify-content: center; */
 }
 
@@ -274,8 +294,8 @@ form{
 }
 
 .form-group textarea {
-  min-height: 120px;
-  resize: vertical;
+  min-height: 150px;
+  /* resize: vertical; */
 }
 .submit-btn{
     width:20%;
@@ -291,5 +311,10 @@ form{
 }
 .social{
     text-decoration: none;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 10px;
 
 }
