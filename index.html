@@ -11,7 +11,11 @@
   <body>
     <!-- Header section-->
     <header>
+      <div class="db-identity">
+      <img src="images/DB1-logo.png" alt="delicoious-bites-logo" class="logo">
       <h1>Delicious Bites</h1>
+      </div>
+      
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -26,8 +30,12 @@
       <!-- hero section -->
       <section class="hero">
         <div class="wel-message">
-          <h2 style="font-size: 40px">Welcome To Delicious Bites</h2>
-          <button class="orderbtn">Order Now</button>
+          <h2 style="font-size: 50px">
+            <span class="pop-in word1" >Welcome</span>
+            <span class="pop-in word2" >To</span>
+            <span class="pop-in word3" >Delicious Bites</span>
+          </h2>
+          <button class=" btn orderbtn">Order Now</button>
         </div>
       </section>
 
@@ -38,9 +46,10 @@
         <div class="aboutinfo">
           <img
             src="images/dinner-table-with-foods-soft-drinks-restaurant.jpg"
-            alt=""
+            alt="delicious-bites-food"
             width="500px"
             height="200px"
+            class="about-img"
           />
           <div class="about_p">
             <h4 style="color: #001d3d">About Delicious Bites</h4>
@@ -125,7 +134,7 @@
         </div>
       </section>
 
-      <footer class="contact">
+      <section class="contact" id="contact">
         <h3 style="color: orange" class="">Contact Us</h3>
         <hr />
         <div class="contact-info">
@@ -155,11 +164,15 @@
               <textarea name="" id="message"></textarea>
             </div>
 
-            <button type="submit" class="submit-btn">Place Order</button>
+            <button type="submit" class="btn submit-btn">Place Order</button>
           </form>
-          <a href="http://" target="_blank" class="social"><i class="fa-brands fa-instagram"></i> Visit Our Instagram</a>
+          
         </div>
-      </footer>
+      </section>
     </main>
+    <footer>
+       <p>&copy; Delicious Bites. All rights reserved.</p>
+      <a href="http://" target="_blank" class="social"><i class="fa-brands fa-instagram"></i> Visit Our Instagram</a>
+    </footer>
   </body>
 </html>
