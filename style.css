@@ -394,3 +394,21 @@ footer{
     background-color: #26262649;
     padding: 20px;
 }
+
+/* Responsive Design */
+
+@media (min-width:768px){
+   nav{
+    display: flex;
+    flex-direction: column;
+   }
+   .about{
+    display: flex;
+    flex-direction: column;
+
+   }
+   .menu{
+    display: flex;
+    flex-direction: column;
+   }
+}
