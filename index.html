@@ -1,178 +1,81 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Delicious Bites</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fresh Ugandan comfort food, prepared with care at Delicious Bites.">
+    <meta name="theme-color" content="#17251b">
+    <title>Delicious Bites | Fresh Ugandan Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- Header section-->
-    <header>
-      <div class="db-identity">
-      <img src="images/DB1-logo.png" alt="delicoious-bites-logo" class="logo">
-      <h1>Delicious Bites</h1>
-      </div>
-      
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Delicious Bites home">
+        <img src="images/DB1-logo.png" alt="" width="56" height="56">
+        <span>Delicious Bites</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span><span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#about">Our story</a><a href="#menu">Menu</a><a href="#pricing">Prices</a><a href="#contact">Order</a>
       </nav>
     </header>
-    <hr />
-    <main>
-      <!-- hero section -->
-      <section class="hero">
-        <div class="wel-message">
-          <h2 style="font-size: 50px">
-            <span class="pop-in word1" >Welcome</span>
-            <span class="pop-in word2" >To</span>
-            <span class="pop-in word3" >Delicious Bites</span>
-          </h2>
-          <button class=" btn orderbtn">Order Now</button>
+
+    <main id="main-content">
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">Made in Uganda · Served with heart</p>
+          <h1>Good food brings<br><em>people together.</em></h1>
+          <p>Fresh local ingredients, treasured family recipes, and generous plates—prepared for your table.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#contact">Order now</a><a class="button button-ghost" href="#menu">Explore our menu</a></div>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to our story">↓</a>
+      </section>
+
+      <section class="section story" id="about">
+        <div class="story-image"><img src="images/dinner-table-with-foods-soft-drinks-restaurant.jpg" alt="A table filled with freshly prepared dishes" loading="lazy"></div>
+        <div class="story-copy">
+          <p class="eyebrow">Our story</p><h2>From our family table to yours</h2>
+          <p>Delicious Bites began with the recipes that filled our home and brought our family together. Today, every plate still carries that same history, culture, and care.</p>
+          <p>We cook with fresh ingredients and familiar flavours, so every visit feels a little like coming home.</p>
+          <div class="signature"><span>Fresh daily</span><span>Local flavours</span><span>Made with care</span></div>
         </div>
       </section>
 
-      <!-- about section -->
-      <section class="about" id="about">
-        <h3 style="color: orange">About</h3>
-        <hr />
-        <div class="aboutinfo">
-          <img
-            src="images/dinner-table-with-foods-soft-drinks-restaurant.jpg"
-            alt="delicious-bites-food"
-            width="500px"
-            height="200px"
-            class="about-img"
-          />
-          <div class="about_p">
-            <h4 style="color: #001d3d">About Delicious Bites</h4>
-            <p>
-              At Delicious Bites, our story doesn't start in a professional
-              kitchen,<br />
-              but in the heart of our home.
-            </p>
-            <p>
-              What began as a family recipe has grown into a space where every
-              plate tells a story.
-            </p>
-            <p>
-              We believe that a meal is more than just food—it's a 'bite' of
-              history, culture, and care.
-            </p>
-            <p>
-              Our mission is to share the flavors that shaped us with our
-              community,<br />
-              using only the freshest ingredients.
-            </p>
-            <p>
-              Welcome to our table; we can't wait to share a piece of our world
-              with you.
-            </p>
-          </div>
+      <section class="section menu-section" id="menu">
+        <div class="section-heading"><p class="eyebrow">What we serve</p><h2>Simple food, full of flavour</h2><p>Comforting favourites and refreshing drinks, prepared fresh to order.</p></div>
+        <div class="menu-grid">
+          <article class="menu-card food-card"><div class="card-number">01</div><h3>From the kitchen</h3><ul><li><span>Classic Rolex</span><small>Eggs, vegetables &amp; chapati</small></li><li><span>Golden Chips</span><small>Crisp, hot &amp; perfectly seasoned</small></li><li><span>Fragrant Pilau</span><small>Spiced rice with tender meat</small></li></ul></article>
+          <article class="menu-card drinks-card"><div class="card-number">02</div><h3>From the bar</h3><ul><li><span>Fresh Juice</span><small>Seasonal fruit, made daily</small></li><li><span>Bushera</span><small>A traditional local favourite</small></li><li><span>Water &amp; Soda</span><small>Served perfectly chilled</small></li></ul></article>
         </div>
       </section>
 
-      <section class="menu" id="menu">
-        <h3 style="text-align: center; color: orange">Menu</h3>
-        <hr />
-        <div class="menu-lists">
-          <ol class="foodmenu">
-            <h4>Food</h4>
-            <li>Rolex</li>
-            <li>Chips</li>
-            <li>Pilau</li>
-            <li>Rolex</li>
-          </ol>
-          <ul class="foodmenu">
-            <h4>Drinks</h4>
-            <li>Water</li>
-            <li>Soda</li>
-            <li>Bushera</li>
-            <li>Juice</li>
-          </ul>
+      <section class="section pricing" id="pricing">
+        <div class="section-heading"><p class="eyebrow">Clear &amp; honest</p><h2>Our prices</h2><p>Great food should be easy to enjoy.</p></div>
+        <div class="price-list" role="list">
+          <div class="price-row" role="listitem"><div><strong>Classic Rolex</strong><span>Eggs, vegetables &amp; chapati</span></div><b>UGX 5,000</b></div>
+          <div class="price-row" role="listitem"><div><strong>Golden Chips</strong><span>Crisp and freshly seasoned</span></div><b>UGX 15,000</b></div>
+          <div class="price-row" role="listitem"><div><strong>Fragrant Pilau</strong><span>Spiced rice with tender meat</span></div><b>UGX 18,000</b></div>
+          <div class="price-row" role="listitem"><div><strong>Fresh Juice</strong><span>Ask about today's flavours</span></div><b>UGX 5,000</b></div>
         </div>
       </section>
 
-      <section class="pricetags" id="pricing">
-        <h3 style="color: orange">Price Table</h3>
-        <hr />
-        <div class="wrapper">
-          <table border="1">
-            <tr>
-              <th>Food Item</th>
-              <th>Price(UGX)</th>
-              <th>Availability</th>
-            </tr>
-            <tr>
-              <td>Rolex</td>
-              <td>5,000</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>Chips</td>
-              <td>15,000</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>Chips</td>
-              <td>15,000</td>
-              <td>Yes</td>
-            </tr>
-            <tr>
-              <td>Chips</td>
-              <td>15,000</td>
-              <td>Yes</td>
-            </tr>
-          </table>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
-        <h3 style="color: orange" class="">Contact Us</h3>
-        <hr />
-        <div class="contact-info">
-          <form action="" method="">
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input type="text" id="name" placeholder="Enter your name" />
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" placeholder="Enter your email" />
-            </div>
-            <div class="form-group">
-              <label for="tel">Telephone Number:</label>
-              <input type="number" id="tel" placeholder="Enter your number" />
-            </div>
-            <div class="form-group">
-              <label for="order-select">Order Selection:</label>
-              <select name="" id="order-select">
-                <option value="">Rolex</option>
-                <option value="">chips</option>
-                <option value="">Soda</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Message:</label>
-              <textarea name="" id="message"></textarea>
-            </div>
-
-            <button type="submit" class="btn submit-btn">Place Order</button>
-          </form>
-          
-        </div>
+      <section class="section order-section" id="contact">
+        <div class="order-intro"><p class="eyebrow">Ready when you are</p><h2>What can we make for you?</h2><p>Send your order request and our team will have the details ready for confirmation.</p><p class="note">This form prepares your request on this device. No payment is taken online.</p></div>
+        <form id="order-form">
+          <div class="field-row"><label>Full name<input name="name" autocomplete="name" required placeholder="Your name"></label><label>Phone number<input name="phone" type="tel" autocomplete="tel" required inputmode="tel" placeholder="e.g. 0772 000 000"></label></div>
+          <label>Your order<select name="order" required><option value="">Choose an item</option><option>Classic Rolex — UGX 5,000</option><option>Golden Chips — UGX 15,000</option><option>Fragrant Pilau — UGX 18,000</option><option>Fresh Juice — UGX 5,000</option></select></label>
+          <label>Anything else? <span>(optional)</span><textarea name="message" rows="4" placeholder="Quantity, preferences, or collection time"></textarea></label>
+          <button class="button button-primary" type="submit">Prepare order request</button><p class="form-status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
-    <footer>
-       <p>&copy; Delicious Bites. All rights reserved.</p>
-      <a href="http://" target="_blank" class="social"><i class="fa-brands fa-instagram"></i> Visit Our Instagram</a>
-    </footer>
+    <footer><a class="brand footer-brand" href="#home"><img src="images/DB1-logo.png" alt="" width="48" height="48"><span>Delicious Bites</span></a><p>Fresh food. Warm welcome. Every time.</p><p class="copyright">© <span id="year"></span> Delicious Bites. All rights reserved.</p></footer>
   </body>
 </html>
